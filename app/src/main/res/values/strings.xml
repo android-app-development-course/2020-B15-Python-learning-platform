@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Myapp</string>
+
+    <!--  底栏  -->
+    <string name="title_home">主页</string>
+    <string name="title_blog">论坛</string>
+    <string name="title_personal">个人</string>
+
+    <!-- 登录/注册界面 -->
+
+    <string name="pwd">密码</string>
+    <string name="pwd_again">确认密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_register">注册</string>
+
+
+    <!-- 编辑和设置界面 -->
+    <string name="server_addr">""</string>
+    <string name="personal_option_edit">编辑资料</string>
+    <string name="personal_option_setting">设置</string>
+    <string name="return_text">返回</string>
+    <string name="about_us">关于我们</string>
+    <string name="logout">退出登录</string>
+
+    <!-- 修改密码界面 -->
+    <string name="personal_pwd_edit">修改密码</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="new_pwd_again">确认新密码</string>
+    <string name="pwd_edit">确认修改</string>
+
+    <!-- 推荐界面 -->
+    <string name="tuijian">推荐</string>
+
+    <!-- 论坛界面 -->
+    <string name="taolunqu">讨论区</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

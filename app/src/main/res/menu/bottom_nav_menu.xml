@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_blog"
+        android:icon="@drawable/ic_nav_message"
+        android:title="@string/title_blog" />
+
+    <item
+        android:id="@+id/navigation_compiler"
+        android:icon="@drawable/ic_border_color_black_24dp"
+        android:title="编译器"/>
+
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_nav_personal"
+        android:title="@string/title_personal" />
+
+</menu>

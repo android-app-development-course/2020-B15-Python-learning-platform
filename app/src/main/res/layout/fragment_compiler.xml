@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.compiler.CompilerFragment" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/complier_background">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/compiler_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/text_emphasize"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="简单Python编辑器"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/code_editText_content"
+        android:layout_width="350dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape3"
+        android:gravity="top"
+        android:hint="代码输入"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:paddingStart="10dp"
+        android:text="print('hello,python')"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compiler_toolbar" />
+
+    <Button
+        android:id="@+id/compiler_runbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape5"
+        android:text="运行代码"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/code_editText_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compiler_toolbar" />
+
+    <TextView
+        android:id="@+id/compiler_result"
+        android:layout_width="350dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape3"
+        android:gravity="top"
+        android:hint="结果展示"
+        android:paddingStart="10dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compiler_runbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/TABbutton"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape4"
+        android:text="Tab"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/compiler_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_editText_content"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/compiler_addbtn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape4"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/TABbutton"
+        app:layout_constraintTop_toBottomOf="@+id/code_editText_content" />
+
+    <Button
+        android:id="@+id/compiler_subbtn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape4"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/compiler_addbtn"
+        app:layout_constraintTop_toBottomOf="@+id/code_editText_content" />
+
+    <Button
+        android:id="@+id/compiler_mulbtn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape4"
+        android:text="*"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/compiler_subbtn"
+        app:layout_constraintTop_toBottomOf="@+id/code_editText_content" />
+
+    <Button
+        android:id="@+id/compiler_divbtn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape4"
+        android:text="/"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/compiler_mulbtn"
+        app:layout_constraintTop_toBottomOf="@+id/code_editText_content" />
+
+    <Button
+        android:id="@+id/compiler_leftbtn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape4"
+        android:text="("
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/compiler_divbtn"
+        app:layout_constraintTop_toBottomOf="@+id/code_editText_content" />
+
+    <Button
+        android:id="@+id/compiler_rightbtn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape4"
+        android:text=")"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/compiler_leftbtn"
+        app:layout_constraintTop_toBottomOf="@+id/code_editText_content" />
+
+    <Button
+            android:id="@+id/compiler_clearbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="清空代码"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape"
+            app:layout_constraintBottom_toTopOf="@+id/code_editText_content"
+            app:layout_constraintEnd_toStartOf="@+id/compiler_runbtn"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/compiler_toolbar"
+            app:layout_constraintVertical_bias="0.916" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
